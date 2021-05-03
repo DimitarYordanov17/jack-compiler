@@ -73,8 +73,11 @@ class AssemblerLibrary:
       'D&M': '1000000',
       'D|M': '1010101',
     }
-
-    return bytecode[computation]
+    
+    try: # Handle differences, e.g. 'M+D'=='D+M'
+        return bytecode[computation]
+    except:
+        return bytecode[computation[::-1]]
 
   def get_register(register):
     '''
