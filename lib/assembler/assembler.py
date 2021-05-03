@@ -1,7 +1,7 @@
 # A Python assembler for the Hack machine language. @DimitarYordanov17
 # To run: python3 assembler.py {your .asm file}
 
-from assemblerLibrary import AssemblerLibrary
+from lib.assembler.assemblerLibrary import AssemblerLibrary
 import os
 import sys
 
@@ -135,6 +135,3 @@ class Assembler:
           machine_code = instruction_type + "11" + machine_code_computation + machine_code_destination + machine_code_jump 
         
         of.write(machine_code + '\n')
-
-input_file = sys.argv[1]
-Assembler.assemble(input_file)
