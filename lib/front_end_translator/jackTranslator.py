@@ -2,7 +2,7 @@
 
 # To run: python3 jackTranslator.py {path} {generate corresponding XML files, yes/no}
 
-from jackTranslatorLibrary import JackTranslatorLibrary
+from lib.front_end_translator.jackTranslatorLibrary import JackTranslatorLibrary
 import os
 import sys
 

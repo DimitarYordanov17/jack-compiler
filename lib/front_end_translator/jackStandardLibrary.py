@@ -16,7 +16,7 @@ class JackStandardLibrary:
     [class_name1.subroutine_name1, class_name1.subroutine_name2..., class_name2.subroutine_name1, class_name2.subroutine_name2...]
     """
     
-    def __init__(self, file_name='jackStandardLibraryRaw.txt'):
+    def __init__(self, file_name='lib/front_end_translator/jackStandardLibraryRaw.txt'):
         self.standard_library_raw = open(file_name, 'r').read()
         self.standard_library_formatted = JackStandardLibrary.construct_formatted_library(self.standard_library_raw)
         self.full_subroutine_names = JackStandardLibrary.construct_full_subroutine_names(self.standard_library_formatted)

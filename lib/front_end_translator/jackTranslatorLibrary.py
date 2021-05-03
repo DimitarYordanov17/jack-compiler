@@ -1,6 +1,6 @@
 # An intermediate code library for the Jack > Intermediate (VM) code translation. @DimitarYordanov17
 
-from jackStandardLibrary import JackStandardLibrary
+from lib.front_end_translator.jackStandardLibrary import JackStandardLibrary
 import re
 import copy
 
