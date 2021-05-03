@@ -2,7 +2,7 @@
 
 # To run: python3 virtualMachine.py {your .vm file} {yes/no, should distinct .asm files be kept} {yes/no, should bootstrap code be added}
 
-from virtualMachineLibrary import VirtualMachineLibrary
+from lib.virtual_machine_translator.virtualMachineLibrary import VirtualMachineLibrary
 import os
 import sys
 
@@ -119,5 +119,3 @@ class VirtualMachineTranslator:
                     else:
                         f.write(line)
             f.truncate()
-
-VirtualMachineTranslator.translate(sys.argv[1], True if sys.argv[2] == "yes" else False, True if sys.argv[3] == "yes" else False)
