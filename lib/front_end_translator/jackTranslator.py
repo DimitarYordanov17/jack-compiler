@@ -29,7 +29,7 @@ class JackTranslator:
                 for file_name in files:
                     if file_name.endswith(".jack"):
                       jack_files.append(file_name)
-        
+                break        
         # Construct global scope subroutines table and create xml files
         for jack_full_file_name in jack_files:
             jack_xml_file_name = jack_full_file_name.split(".")[0] + ".xml"
